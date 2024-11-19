@@ -130,6 +130,8 @@ public class PdfToDocxController {
 
     private void processBlock(Node blockNode, XWPFDocument docxDocument) {
         XWPFParagraph paragraph = docxDocument.createParagraph();
+        // Create a run to hold the text styling
+        XWPFRun run = paragraph.createRun();
 
         // Apply alignment based on attributes
         NamedNodeMap attributes = blockNode.getAttributes();
@@ -142,8 +144,10 @@ public class PdfToDocxController {
                 else paragraph.setAlignment(ParagraphAlignment.LEFT);
             }
 
-            // Create a run to hold the text styling
-            XWPFRun run = paragraph.createRun();
+            Node underLine = attributes.getNamedItem("text-decoration");
+            if (underLine != null) {
+                run.setUnderline(UnderlinePatterns.SINGLE);
+            }
 
             // Set color
             Node colorNode = attributes.getNamedItem("color");
@@ -175,7 +179,7 @@ public class PdfToDocxController {
             if (fontWeightNode != null) {
                 String fontWeight = fontWeightNode.getNodeValue();
                 run.setBold("bold".equalsIgnoreCase(fontWeight));
-            }
+            } else run.setBold(false);
 
             // Set margin-top (Spacing before paragraph)
             Node marginTopNode = attributes.getNamedItem("margin-top");
@@ -200,27 +204,131 @@ public class PdfToDocxController {
                 addLeader(docxDocument);
             }*/
             else if ("fo:inline".equals(child.getNodeName())) {
-                processFoInline(child, paragraph);
+                processFoInline(child, paragraph,run);
             }
             else if ("fo:block".equals(child.getNodeName())) {
                 processBlock(child,docxDocument);
 
             } else {
                 String text = child.getTextContent().trim();
-                XWPFRun run = paragraph.createRun();
-                run.setText(text);
+                if (!text.isEmpty()) run.setText(text);
             }
         }
     }
 
-    private void processFoInline(Node child, XWPFParagraph paragraph) {
-        NamedNodeMap namedNodeMap = child.getAttributes();
+    private void processBlockInsideOfCell(Node blockNode, XWPFTableCell docxDocument, Node ownerBlock) {
+        // Create a new paragraph inside the table cell
+        XWPFParagraph paragraph = docxDocument.addParagraph();
         XWPFRun run = paragraph.createRun();
+
+        // Apply styling from attributes of the owner block
+        NamedNodeMap attributes = ownerBlock.getAttributes();
+        if (attributes != null) {
+            // Set text alignment
+            Node textAlign = attributes.getNamedItem("text-align");
+            if (textAlign != null) {
+                switch (textAlign.getNodeValue().toLowerCase()) {
+                    case "center" -> paragraph.setAlignment(ParagraphAlignment.CENTER);
+                    case "justify" -> paragraph.setAlignment(ParagraphAlignment.BOTH);
+                    case "right" -> paragraph.setAlignment(ParagraphAlignment.RIGHT);
+                    default -> paragraph.setAlignment(ParagraphAlignment.LEFT);
+                }
+            }
+
+            // Set underline style
+            Node underline = attributes.getNamedItem("text-decoration");
+            if (underline != null && "underline".equalsIgnoreCase(underline.getNodeValue())) {
+                run.setUnderline(UnderlinePatterns.SINGLE);
+            }
+
+            // Set text color
+            Node colorNode = attributes.getNamedItem("color");
+            if (colorNode != null) {
+                run.setColor(colorNode.getNodeValue().replace("#", "")); // Remove "#" if present
+            }
+
+            // Set font family
+            Node fontFamilyNode = attributes.getNamedItem("font-family");
+            if (fontFamilyNode != null) {
+                run.setFontFamily(fontFamilyNode.getNodeValue());
+            }
+
+            // Set font size
+            Node fontSizeNode = attributes.getNamedItem("font-size");
+            if (fontSizeNode != null) {
+                try {
+                    int fontSize = Integer.parseInt(fontSizeNode.getNodeValue().replace("pt", "").trim());
+                    run.setFontSize(fontSize);
+                } catch (NumberFormatException e) {
+                    System.err.println("Invalid font size: " + fontSizeNode.getNodeValue());
+                }
+            }
+
+            // Set bold if font-weight is specified
+            Node fontWeightNode = attributes.getNamedItem("font-weight");
+            run.setBold(fontWeightNode != null && "bold".equalsIgnoreCase(fontWeightNode.getNodeValue()));
+
+            // Set spacing before the paragraph (margin-top)
+            Node marginTopNode = attributes.getNamedItem("margin-top");
+            if (marginTopNode != null) {
+                try {
+                    int marginTop = Integer.parseInt(marginTopNode.getNodeValue().replace("px", "").trim());
+                    paragraph.setSpacingBefore(marginTop * 15); // Convert px to twips (1px = 15 twips)
+                } catch (NumberFormatException e) {
+                    System.err.println("Invalid margin-top: " + marginTopNode.getNodeValue());
+                }
+            }
+        }
+
+        // Process child nodes of the block node
+        NodeList children = blockNode.getChildNodes();
+        for (int i = 0; i < children.getLength(); i++) {
+            Node child = children.item(i);
+
+            switch (child.getNodeName()) {
+                case "fo:inline" -> processFoInline(child, paragraph, run);
+                case "fo:list-block" -> processListBlock(child, docxDocument, ownerBlock);
+                case "fo:block" -> processBlockInsideOfCell(child, docxDocument, ownerBlock);
+                default -> {
+                    String text = child.getTextContent().trim();
+                    if (!text.isEmpty()) run.setText(text);
+                }
+            }
+        }
+    }
+
+    private void processListBlock(Node listBlock, XWPFTableCell docxDocument, Node ownerBlock) {
+        NodeList listItems = listBlock.getChildNodes();
+        for (int i = 0; i < listItems.getLength(); i++) {
+            Node listItem = listItems.item(i);
+            if ("fo:list-item".equals(listItem.getNodeName())) {
+                NodeList listItemChildren = listItem.getChildNodes();
+                for (int j = 0; j < listItemChildren.getLength(); j++) {
+                    Node child = listItemChildren.item(j);
+                    if ("fo:list-item-label".equals(child.getNodeName()) || "fo:list-item-body".equals(child.getNodeName())) {
+                        NodeList blocks = child.getChildNodes();
+                        for (int k = 0; k < blocks.getLength(); k++) {
+                            Node block = blocks.item(k);
+                            if ("fo:block".equals(block.getNodeName())) {
+                                processBlockInsideOfCell(block, docxDocument, ownerBlock);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    private void processFoInline(Node child, XWPFParagraph paragraph,XWPFRun run) {
+        NamedNodeMap namedNodeMap = child.getAttributes();
         if (namedNodeMap != null) {
             Node fontWeightNode = namedNodeMap.getNamedItem("font-weight");
             if (fontWeightNode != null) {
                 String fontWeight = fontWeightNode.getNodeValue();
                 run.setBold("bold".equalsIgnoreCase(fontWeight));
+            } else {
+                run.setBold(false);
             }
 
             // Set margin-left (Spacing before paragraph)
@@ -235,12 +343,12 @@ public class PdfToDocxController {
             }
         }
         String text = child.getTextContent().trim();
-        run.setText(text);
+        if (!text.isEmpty()) run.setText(text);
     }
 
     private void processTable(Node tableNode, XWPFDocument docxDocument,Node blockNode) {
         XWPFTable table = docxDocument.createTable();
-        NamedNodeMap attribute = tableNode.getAttributes();
+        /*NamedNodeMap attribute = tableNode.getAttributes();
         if (attribute != null) {
 
             Node widthNode = attribute.getNamedItem("width");
@@ -257,7 +365,7 @@ public class PdfToDocxController {
             borders.addNewRight().setVal(STBorder.SINGLE);
             borders.addNewInsideH().setVal(STBorder.SINGLE);
             borders.addNewInsideV().setVal(STBorder.SINGLE);
-        }
+        }*/
         NodeList tableChildren = tableNode.getChildNodes();
 
         // Process table columns for widths
@@ -266,7 +374,7 @@ public class PdfToDocxController {
         for (int i = 0; i < tableChildren.getLength(); i++) {
             Node child = tableChildren.item(i);
             if ("fo:table-body".equals(child.getNodeName())) {
-                createTableBody(child, table, columnWidths,blockNode);
+                createTableBody(child, table, columnWidths,blockNode,docxDocument);
             }
         }
     }
@@ -289,20 +397,20 @@ public class PdfToDocxController {
         return columnWidths;
     }
 
-    private void createTableBody(Node tableBodyNode, XWPFTable table, Map<Integer, String> columnWidths,Node blockNode) {
+    private void createTableBody(Node tableBodyNode, XWPFTable table, Map<Integer, String> columnWidths,Node blockNode,XWPFDocument document) {
         NodeList rowList = tableBodyNode.getChildNodes();
         int rowIndex = 0;
         for (int i = 0; i < rowList.getLength(); i++) {
             Node rowNode = rowList.item(i);
             if ("fo:table-row".equals(rowNode.getNodeName())) {
                 XWPFTableRow tableRow = (rowIndex >= table.getNumberOfRows()) ? table.createRow() : table.getRow(rowIndex);
-                createTableRow(rowNode, tableRow, columnWidths,blockNode);
+                createTableRow(rowNode, tableRow, columnWidths,blockNode,document);
             }
             rowIndex++;
         }
     }
 
-    private void createTableRow(Node rowNode, XWPFTableRow tableRow, Map<Integer, String> columnWidths,Node blockNode) {
+    private void createTableRow(Node rowNode, XWPFTableRow tableRow, Map<Integer, String> columnWidths,Node blockNode,XWPFDocument document) {
         NodeList cellList = rowNode.getChildNodes();
         int cellIndex = 0;
 
@@ -313,8 +421,17 @@ public class PdfToDocxController {
                         ? tableRow.addNewTableCell()
                         : tableRow.getCell(cellIndex);
 
-                String text = cellNode.getTextContent().trim();
+                NodeList cellChild = cellNode.getChildNodes();
+                for (int j = 0 ; j < cellChild.getLength() ; j ++) {
+                    Node childNode = cellChild.item(j);
+                    if ("fo:block".equals(childNode.getNodeName())) {
+                        processBlockInsideOfCell(childNode,tableCell,blockNode);
+                    }
+                }
+                /*String text = cellNode.getTextContent().trim();
                 XWPFParagraph paragraph = tableCell.addParagraph();
+                // Create a run to hold the text styling
+                XWPFRun run = paragraph.createRun();
 
                 // Apply alignment based on attributes
                 NamedNodeMap attributes = blockNode.getAttributes();
@@ -324,12 +441,14 @@ public class PdfToDocxController {
                         String alignment = textAlign.getNodeValue();
                         if ("center".equalsIgnoreCase(alignment)) paragraph.setAlignment(ParagraphAlignment.CENTER);
                         else if ("right".equalsIgnoreCase(alignment)) paragraph.setAlignment(ParagraphAlignment.RIGHT);
+*//*
                         else if ("justify".equalsIgnoreCase(alignment)) paragraph.setAlignment(ParagraphAlignment.BOTH);
+*//*
                         else paragraph.setAlignment(ParagraphAlignment.LEFT);
                     }
 
                     // Apply padding-like effects based on attributes
-                    Node paddingNode = attributes.getNamedItem("padding");
+                    *//*Node paddingNode = attributes.getNamedItem("padding");
                     if (paddingNode != null) {
                         String paddingValue = paddingNode.getNodeValue();
                         int padding = Integer.parseInt(paddingValue.replace("pt", "").trim()); // Assuming padding is in "pt"
@@ -346,10 +465,8 @@ public class PdfToDocxController {
 
                         // Set left indentation (simulating padding)
                         paragraph.setIndentationLeft(paddingLeft);
-                    }
+                    }*//*
 
-                    // Create a run to hold the text styling
-                    XWPFRun run = paragraph.createRun();
 
                     // Set color
                     Node colorNode = attributes.getNamedItem("color");
@@ -358,10 +475,10 @@ public class PdfToDocxController {
                         run.setColor(colorValue); // Use hex color code, e.g., "FF0000" for red
                     }
 
-                    Node underLine = attributes.getNamedItem("text-decoration");
+                    *//*Node underLine = attributes.getNamedItem("text-decoration");
                     if (underLine != null) {
                         run.setUnderline(UnderlinePatterns.SINGLE);
-                    }
+                    }*//*
 
                     // Set font-family
                     Node fontFamilyNode = attributes.getNamedItem("font-family");
@@ -386,14 +503,14 @@ public class PdfToDocxController {
                     if (fontWeightNode != null) {
                         String fontWeight = fontWeightNode.getNodeValue();
                         run.setBold("bold".equalsIgnoreCase(fontWeight));
-                    }
+                    } else run.setBold(false);
 
                     // Set margin-top (Spacing before paragraph)
                     Node marginTopNode = attributes.getNamedItem("margin-top");
                     if (marginTopNode != null) {
                         try {
                             int marginTop = Integer.parseInt(marginTopNode.getNodeValue().replace("px", "").trim());
-                            paragraph.setSpacingBefore(marginTop * 20); // Convert points to twips (1pt = 20 twips)
+                            paragraph.setSpacingBefore(marginTop * 15); // Convert points to twips (1pt = 20 twips)
                         } catch (NumberFormatException e) {
                             System.err.println("Invalid margin-top: " + marginTopNode.getNodeValue());
                         }
@@ -401,8 +518,7 @@ public class PdfToDocxController {
                 }
 
 
-                XWPFRun run = paragraph.createRun();
-                run.setText(text);
+                if (!text.isEmpty()) run.setText(text);*/
 
                 if (columnWidths.containsKey(cellIndex)) {
                     applyColumnWidth(tableCell, columnWidths.get(cellIndex));

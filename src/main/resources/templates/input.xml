@@ -153,8 +153,7 @@
                                     <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">1.8</fo:block>
                                 </fo:table-cell>
                                 <fo:table-cell text-align="left" display-align="center">
-                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">Business
-                                        of the Issuer
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">Business of the Issuer
                                     </fo:block>
                                 </fo:table-cell>
                                 <fo:table-cell text-align="left">
