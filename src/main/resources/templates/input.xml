@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root
+        xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <fo:layout-master-set>
+        <fo:simple-page-master master-name="simple" page-width="8.268055555555555in" page-height="11.693055555555556in" margin-top="35.4pt" margin-bottom="35.4pt" margin-right="48pt" margin-left="48pt">
+            <fo:region-body region-name="xsl-region-body" margin-top="36.6pt" margin-bottom="36.6pt"/>
+            <fo:region-before region-name="xsl-region-before" extent="5in"/>
+            <fo:region-after region-name="xsl-region-after" extent=".5in"/>
+        </fo:simple-page-master>
+    </fo:layout-master-set>
+    <fo:page-sequence master-reference="simple" font-size="10pt">
+        <fo:flow flow-name="xsl-region-body" id="id_last_flow">
+            <fo:block-container>
+                <fo:block text-align="right" margin-top="10px" font-family="Roboto" font-size="9pt" font-weight="normal" color="#808080">TS2024/74/F3</fo:block>
+                <fo:block text-align="center" text-decoration="underline" margin-top="10px" font-family="Roboto" font-size="10pt" font-weight="bold">
+                    TERMSHEET
+                </fo:block>
+                <fo:block>
+                    <fo:leader/>
+                </fo:block>
+                <fo:block text-align="justify" color="#000000" font-family="Roboto" font-size="10pt" font-weight="normal">
+                    <fo:inline>The intent of this indicative and non-binding term sheet </fo:inline>
+                    <fo:inline font-weight="bold">(“TS2024/74/F3”)</fo:inline>
+                    <fo:inline> dated 11th November 2024 is to describe, for negotiation purposes only, some key terms of the proposed agreement to be entered into between Grand Anicut Trust/Fund 4 and/or its affiliates, a Category - II Alternative Investment Fund registered with the Securities and Exchange Board of India (</fo:inline>
+                    <fo:inline font-weight="bold">“Investor”</fo:inline>
+                    <fo:inline>) and COCO Pvt. Ltd.,  (the</fo:inline>
+                    <fo:inline font-weight="bold">“Company”</fo:inline>
+                    <fo:inline> or </fo:inline>
+                    <fo:inline font-weight="bold">“Issuer”</fo:inline>
+                    <fo:inline>), a company incorporated under the Companies Act, 1956 or Companies Act, 2013, as the case may be and having its registered office at Kumbakonam,TamilNadu-600234 with respect to the proposed investment/s by the Investor in the Company (</fo:inline>
+                    <fo:inline font-weight="bold">“Proposed Transaction”</fo:inline>
+                    <fo:inline> ). The transaction contemplated herein, is subject to, among other things: (a) the completion of legal, financial and tax due diligence process satisfactory  to the Investor in its sole and absolute discretion; (b) procurement of internal approvals by the Investor; and (c) the  execution of, and satisfaction of conditions mentioned in, the appropriate definitive agreements ( </fo:inline>
+                    <fo:inline font-weight="bold">Definitive Documents</fo:inline>
+                    <fo:inline>). Notwithstanding anything to the contrary, any obligations of the Company to complete any transaction, whether contemplated herein or otherwise, are subject to the parties hereto having negotiated, approved, executed and delivered the Definitive Documents and such Definitive Documents remaining in full force and effect. Further, nothing contained herein shall constitute an offer to buy or sell the securities described in this Term Sheet.</fo:inline>
+                </fo:block>
+                <fo:block>
+                    <fo:leader/>
+                </fo:block>
+                <fo:block text-align="justify" color="#000000" font-family="Roboto" font-size="10pt" font-weight="normal">
+                    <fo:block text-align="justify" color="#000000" font-family="Roboto" font-size="10pt" font-weight="normal">
+                        <fo:inline>This Term Sheet shall remain valid up to</fo:inline>
+                        <fo:inline font-weight="bold"> 7 (seven) days </fo:inline>
+                        <fo:inline>from the date hereof, however, the same can be extended by additional</fo:inline>
+                        <fo:inline font-weight="bold"> 7 (seven) days</fo:inline>
+                        <fo:inline> at the option of the Investor.  If this Term Sheet remains unsigned after that time, Investor at its option may immediately terminate discussions with the Company or change any or all pricing, terms and conditions contained herein. Notwithstanding the foregoing, the Investor shall have the right to terminate this Term Sheet at any time before the expiry of the aforesaid period, at its sole and absolute discretion, without any liability or obligation whatsoever.</fo:inline>
+                    </fo:block>
+                </fo:block>
+                <fo:block>
+                    <fo:leader/>
+                </fo:block>
+                <fo:block text-align="left" font-family="Roboto" font-size="10pt">
+                    <fo:inline font-weight="bold">1.0</fo:inline>
+                    <fo:inline margin-left="10pt" font-weight="bold">  Parties</fo:inline>
+                </fo:block>
+                <fo:block>
+                    <fo:leader/>
+                </fo:block>
+                <fo:block font-family="Roboto" margin-top="10px" font-size="10pt" font-weight="normal">
+                    <fo:table border-width="1px" width="100%">
+                        <fo:table-column column-number="1" border-width="1px" border-style="solid" column-width="0.5in"/>
+                        <fo:table-column column-number="2" border-width="1px" border-style="solid" column-width="1.6in"/>
+                        <fo:table-column column-number="3" border-width="1px" border-style="solid" column-width="4.7in"/>
+                        <fo:table-body height="10cm" border-width="1px">
+                            <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">1.1</fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">Investor
+                                    </fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left">
+                                    <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">Grand Anicut Trust/Fund 4 and/or its affiliates</fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                            <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">1.2</fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">Company
+                                    </fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left">
+                                    <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">COCO Pvt. Ltd.</fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                            <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">1.3</fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">Promoters
+                                    </fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left">
+                                    <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">Karthick</fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                            <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">1.4</fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">Other
+                                        Shareholders
+                                    </fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left">
+                                    <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">john</fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                            <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">1.5</fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">Debenture
+                                        Trustee
+                                    </fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left">
+                                    <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">Santhosh</fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                            <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">1.6</fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">Depository
+                                    </fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left">
+                                    <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">NSDL</fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                            <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">1.7</fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                        Registrar And Transfer Agent
+                                    </fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left">
+                                    <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">Bank</fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                            <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">1.8</fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left" display-align="center">
+                                    <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">Business of the Issuer
+                                    </fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell text-align="left">
+                                    <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">sweet and bakery and cake</fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                        </fo:table-body>
+                    </fo:table>
+                    <fo:block border-width="1px">
+                        <fo:leader/>
+                    </fo:block>
+                    <fo:block text-align="left" font-family="Roboto" font-size="10pt">
+                        <fo:inline font-weight="bold">2.0</fo:inline>
+                        <fo:inline margin-left="10pt" font-weight="bold">  Investment and Returns</fo:inline>
+                    </fo:block>
+                    <fo:block>
+                        <fo:leader/>
+                    </fo:block>
+                    <fo:block font-family="Roboto" margin-top="10px" font-size="10pt" font-weight="normal">
+                        <fo:table border-width="1px" width="100%">
+                            <fo:table-column column-number="1" border-width="1px" border-style="solid" column-width="0.5in"/>
+                            <fo:table-column column-number="2" border-width="1px" border-style="solid" column-width="1.6in"/>
+                            <fo:table-column column-number="3" border-width="1px" border-style="solid" column-width="4.7in"/>
+                            <fo:table-body height="10cm" border-width="1px">
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.1</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Type of Security
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">
+                                            <fo:block text-align="justify" color="#000000" font-family="Roboto" font-size="10pt" font-weight="normal">
+                                                <fo:inline>Rated Listed Secured Non-Convertible Debentures                                 (“</fo:inline>
+                                                <fo:inline font-weight="bold">NCDs</fo:inline>
+                                                <fo:inline>”/“</fo:inline>
+                                                <fo:inline font-weight="bold">Debentures</fo:inline>
+                                                <fo:inline>”)</fo:inline>
+                                            </fo:block>
+                                        </fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.2</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Face Value of NCDs
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">Rs.10,00,000</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.3</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Issue Size
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">30 NCDs, at par for cash in dematerialized form by Issuer</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.4</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Investment Amount
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="2px" padding="2pt">
+                                            <fo:block margin-left="2px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">Rs. 3,00,00,000 (Three Crore Rupees Only) in One Tranche:-</fo:block>
+                                            <fo:block margin-left="2px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">Tranche 1: Rs. 3,00,00,000.00 (Three Crore)</fo:block>
+                                        </fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.5</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Deemed Date of Allotment
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">The date falling after the expiry of 2 (two) business days from the Pay-in Date/s.</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.6</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Maturity Date
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">750 Months  from Pay-in Date</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.7</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Coupon
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">
+                                            <fo:block text-align="justify" color="#000000" font-family="Roboto" font-size="10pt" font-weight="normal">
+                                                <fo:inline/>
+                                                <fo:inline font-weight="bold">12</fo:inline>
+                                                <fo:inline>% Fixed Payable Monthly in Advance</fo:inline>
+                                            </fo:block>
+                                        </fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.8</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Upfront Coupon
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">
+                                            <fo:block text-align="justify" color="#000000" font-family="Roboto" font-size="10pt" font-weight="normal">
+                                                <fo:inline/>
+                                                <fo:inline font-weight="bold">8</fo:inline>
+                                                <fo:inline>% of the investment Amount payable split as below:</fo:inline>
+                                            </fo:block>
+                                            <fo:block margin-top="2pt">
+                                                <fo:list-block>
+                                                    <fo:list-item>
+                                                        <fo:list-item-label end-indent="1pt">
+                                                            <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" space-before.optimum="0pt" space-after.optimum="0pt">• </fo:block>
+                                                        </fo:list-item-label>
+                                                        <fo:list-item-body start-indent="20pt" end-indent="1pt">
+                                                            <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" text-align="justify" space-before.optimum="0pt" space-after.optimum="0pt">
+                                                                <fo:block text-align="justify" color="#000000" font-family="Roboto" font-size="10pt" font-weight="normal">
+                                                                    <fo:inline/>
+                                                                    <fo:inline font-weight="bold">4.0</fo:inline>
+                                                                    <fo:inline>% of the investment Amount payable upon signing of the termsheet, to be forfeited if the company does not draw down the investment Amount; and</fo:inline>
+                                                                </fo:block>
+                                                            </fo:block>
+                                                        </fo:list-item-body>
+                                                    </fo:list-item>
+                                                    <fo:list-item>
+                                                        <fo:list-item-label end-indent="1pt">
+                                                            <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" space-before.optimum="0pt" space-after.optimum="0pt">• </fo:block>
+                                                        </fo:list-item-label>
+                                                        <fo:list-item-body start-indent="20pt" end-indent="1pt">
+                                                            <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" text-align="justify" space-before.optimum="0pt" space-after.optimum="0pt">
+                                                                <fo:block text-align="justify" color="#000000" font-family="Roboto" font-size="10pt" font-weight="normal">
+                                                                    <fo:inline/>
+                                                                    <fo:inline font-weight="bold">4.0</fo:inline>
+                                                                    <fo:inline>% of the investment Amount to be paid upon  disbursement </fo:inline>
+                                                                </fo:block>
+                                                            </fo:block>
+                                                        </fo:list-item-body>
+                                                    </fo:list-item>
+                                                </fo:list-block>
+                                            </fo:block>
+                                        </fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.9</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Redemption Coupon
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">
+                                            <fo:block text-align="justify" color="#000000" font-family="Roboto" font-size="10pt" font-weight="normal">
+                                                <fo:inline/>
+                                                <fo:inline font-weight="bold">12</fo:inline>
+                                                <fo:inline>% Per Annum payable at time of Redemption</fo:inline>
+                                            </fo:block>
+                                        </fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.10</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            End Use
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">Growth Capital and my Flow Testpostman</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.11</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Security
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="2px" padding="2pt">
+                                            <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" text-align="justify">The NCDs shall be secured by:</fo:block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent="1pt">
+                                                        <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" space-before.optimum="0pt" space-after.optimum="0pt">(a)  </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent="20pt" end-indent="1pt">
+                                                        <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" text-align="justify" space-before.optimum="0pt" space-after.optimum="0pt">Pledge of shares in the COCO Pvt. Ltd. amounting to 10% of fully diluted share holding.</fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent="1pt">
+                                                        <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" space-before.optimum="0pt" space-after.optimum="0pt">(b)  </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent="20pt" end-indent="1pt">
+                                                        <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" text-align="justify" space-before.optimum="0pt" space-after.optimum="0pt">Issue of demand promissory note by the Company;</fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent="1pt">
+                                                        <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" space-before.optimum="0pt" space-after.optimum="0pt">(c)  </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent="20pt" end-indent="1pt">
+                                                        <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" text-align="justify" space-before.optimum="0pt" space-after.optimum="0pt">Post-dated cheques for monthly coupon payments and principal payment instalments and an undated cheque for the entire Investment Amount; and such other security as may be created under the Definitive Documents</fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.12</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Redemption Provisions
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="2px" padding="2pt">
+                                            <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" text-align="justify">Bullet</fo:block>
+                                            <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" text-align="justify"/></fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.13</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Grace period
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">5 (Five) cumulative calendar days during the tenor of NCDS to repay principal amount of NCDs and/or the Coupon. Default Interest shall be payable for the period of delay.</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2. 14</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Special Conditions
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="2px" padding="2pt">
+                                            <fo:block font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" text-align="justify">Col-1</fo:block>
+                                        </fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">2.15</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Default Interest
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">0.25% (Zero Point Two Five per cent) Per Month in the event of any delay in repayment of the Investment Amount or part there of, or payment of Coupon and upon occurrence of any other Event of Default</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                            </fo:table-body>
+                        </fo:table>
+                    </fo:block>
+                    <fo:block border-width="1px">
+                        <fo:leader/>
+                    </fo:block>
+                    <fo:block text-align="left" font-family="Roboto" font-size="10pt">
+                        <fo:inline font-weight="bold">3.0</fo:inline>
+                        <fo:inline margin-left="10pt" font-weight="bold">  Associated rights</fo:inline>
+                    </fo:block>
+                    <fo:block border-width="1px">
+                        <fo:leader/>
+                    </fo:block>
+                    <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">There will be no restriction on the ability of Investor to transfer all or any of the Debentures held by it along with rights attached to such Debentures to any person.</fo:block>
+                    <fo:block border-width="1px">
+                        <fo:leader/>
+                    </fo:block>
+                    <fo:block text-align="left" font-family="Roboto" font-size="10pt">
+                        <fo:inline font-weight="bold">4.0</fo:inline>
+                        <fo:inline margin-left="10pt" font-weight="bold">  Conditions to closing </fo:inline>
+                    </fo:block>
+                    <fo:block border-width="1px">
+                        <fo:leader/>
+                    </fo:block>
+                    <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">The obligation of the Investor to invest in the Company shall be subject to inter alia, the following conditions. Notwithstanding the generality of the foregoing, the Investor may enjoin such other conditions upon the Company, prior to making the investment, as it deems fit.</fo:block>
+                    <fo:block border-width="1px">
+                        <fo:leader/>
+                    </fo:block>
+                    <fo:block font-family="Roboto" margin-top="10px" font-size="10pt" font-weight="normal">
+                        <fo:table border-width="1px" width="100%">
+                            <fo:table-column column-number="1" border-width="1px" border-style="solid" column-width="0.5in"/>
+                            <fo:table-column column-number="2" border-width="1px" border-style="solid" column-width="1.6in"/>
+                            <fo:table-column column-number="3" border-width="1px" border-style="solid" column-width="4.7in"/>
+                            <fo:table-body height="10cm" border-width="1px">
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">4.1</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Due Diligence
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">The Investor shall complete a detailed due diligence covering business, financial, legal and tax areas, to its satisfaction.</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">4.2</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Business Plan
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">Finalization of business plan for 12 months from date of investment of the Investment Amount. &amp;</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">4.3</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Undertakings, Representations and Warranties
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">The Definitive Documents will contain customary representations, warranties, indemnities, undertakings and covenants, together with deal-specific provisions arising from the due diligence exercise.</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">4.4</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Approvals and Consent
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">The Proposed Transaction must be approved by Investor's investment committee and by the board of directors and shareholders of the Company.</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                            </fo:table-body>
+                        </fo:table>
+                    </fo:block>
+                    <fo:block border-width="1px">
+                        <fo:leader/>
+                    </fo:block>
+                    <fo:block border-width="1px">
+                        <fo:leader/>
+                    </fo:block>
+                    <fo:block text-align="left" font-family="Roboto" font-size="10pt">
+                        <fo:inline font-weight="bold">5.0</fo:inline>
+                        <fo:inline margin-left="10pt" font-weight="bold">  Other Matters</fo:inline>
+                    </fo:block>
+                    <fo:block>
+                        <fo:leader/>
+                    </fo:block>
+                    <fo:block font-family="Roboto" margin-top="10px" font-size="10pt" font-weight="normal">
+                        <fo:table border-width="1px" width="100%">
+                            <fo:table-column column-number="1" border-width="1px" border-style="solid" column-width="0.5in"/>
+                            <fo:table-column column-number="2" border-width="1px" border-style="solid" column-width="1.6in"/>
+                            <fo:table-column column-number="3" border-width="1px" border-style="solid" column-width="4.7in"/>
+                            <fo:table-body height="10cm" border-width="1px">
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">5.1</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Costs And Expenses
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">The drafting charges for the Definitive Documents, shall be borne by the Company. The Company shall also bear all other costs and expenses pertaining to the Proposed Transaction, including the stamp duty.</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">5.2</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Dispute Resolution
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">Any dispute arising out of this Term Sheet shall be subject arbitration of a sole arbitrator mutually appointed by the parties herein. The Arbitration shall be held in Chennai, India, and the language of the proceedings shall be in English. The arbitration shall be conducted in accordance with the provisions of the Arbitration and Conciliation Act, 1996.</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">5.3</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Governing Law
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">The laws of India. Subject to Clause 5.2 above, the courts in Chennai shall have exclusive jurisdiction.</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">5.4</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Exclusivity
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">The Company agrees, acknowledges and understands to not negotiate or enter into or continue discussions with any other person or entity or solicit or encourage, directly or indirectly, or furnish information to any other person or entity, with respect to transactions and arrangements contemplated in this Term Sheet, during the period of 7 days following the date of execution of this Term Sheet.</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row border-color="black" border-width="1px" border-style="solid" height="0.2in">
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">5.5</fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left" display-align="center">
+                                        <fo:block margin-left="0" padding-left="3pt" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt" font-weight="bold">
+                                            Confidentiality
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell text-align="left">
+                                        <fo:block margin-left="5px" font-size="10pt" color="#000000" font-family="Roboto" padding="2pt">The parties shall keep confidential at all times the fact that the parties herein have executed this Term Sheet, the terms of this Term Sheet and the existence and content of any negotiations between both the parties except that both parties may (i) inform advisors, counsels, and employees with a need to know as each party deems necessary, and (ii) make appropriate disclosures if required by applicable laws.</fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                            </fo:table-body>
+                        </fo:table>
+                    </fo:block>
+                    <fo:block border-width="1px">
+                        <fo:leader/>
+                    </fo:block>
+                    <fo:block border-width="1px">
+                        <fo:leader/>
+                    </fo:block>
+                    <fo:block text-align="left" font-family="Roboto" font-size="10pt">
+                        <fo:inline margin-left="10pt" font-weight="bold">ACCEPTED AND AGREED:</fo:inline>
+                    </fo:block>
+                    <fo:block font-family="Roboto" margin-top="10px" font-size="10pt" font-weight="normal">
+                        <fo:table border-width="1px" border-style="solid" width="100%">
+                            <fo:table-column column-number="1" column-width="50%"/>
+                            <fo:table-column column-number="2" column-width="50%"/>
+                            <fo:table-body>
+                                <fo:table-row>
+                                    <fo:table-cell border-width="1px" border-style="solid" padding="5px">
+                                        <fo:block>
+                                            <fo:inline text-decoration="underline" font-weight="bold">COCO Pvt. Ltd. (Issuer)</fo:inline>
+                                            <fo:block>Per:</fo:block>
+                                            <fo:block>Title:</fo:block>
+                                            <fo:block>Date:</fo:block>
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell border-width="1px" border-style="solid" padding="5px">
+                                        <fo:block>
+                                            <fo:inline text-decoration="underline" font-weight="bold">For Investor</fo:inline>
+                                            <fo:block>Per:</fo:block>
+                                            <fo:block>Title:</fo:block>
+                                            <fo:block>Date:</fo:block>
+                                        </fo:block>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                                <fo:table-row>
+                                    <fo:table-cell border-width="1px" border-style="solid" padding="5px">
+                                        <fo:block>
+                                            <fo:inline text-decoration="underline" font-weight="bold">For Promoters</fo:inline>
+                                            <fo:block>Per:</fo:block>
+                                            <fo:block>Title:</fo:block>
+                                            <fo:block>Date:</fo:block>
+                                        </fo:block>
+                                    </fo:table-cell>
+                                    <fo:table-cell border-width="1px" border-style="solid" padding="5px">
+                                        <fo:block/>
+                                    </fo:table-cell>
+                                </fo:table-row>
+                            </fo:table-body>
+                        </fo:table>
+                    </fo:block>
+                </fo:block>
+            </fo:block-container>
+        </fo:flow>
+    </fo:page-sequence>
+</fo:root>
